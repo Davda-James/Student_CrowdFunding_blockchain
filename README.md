@@ -1,6 +1,11 @@
 # Student Crowd Funding Blockchain 
 Welcome to the **Student Crowdfunding Platform**! This project is a decentralized application (DApp) built using Solidity smart contracts for the backend and Next.js for the frontend. It allows students to create and manage fundraising campaigns, with contributions tracked and verified on blockchain .
 
+![Student Crowdfunding Platform HomePage](/frontend/public/Home.png)
+![Student Crowdfunding Platform HomePage with Vertical Navbar](/frontend/public/VerticalNav.png)
+![Student Crowdfunding Platform Create Campaign](/frontend/public/CreateCampaign.png)
+![Student Crowdfunding Platform Contribute](/frontend/public/Contribute.png)
+
 ## 🚀 Features
 
 - **Smart Contracts**: Written in Solidity, these contracts manage campaigns, track funds raised, and ensure transparency.
@@ -26,7 +31,7 @@ Ensure you have the following installed on your machine:
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/student-crowdfunding-blockchain.git
+git clone https://github.com/Davda-James/student-crowdfunding-blockchain.git
 cd student-crowdfunding-blockchain
 ```
 #### 2. Setting up the folder inside /frontend/src/utils
@@ -38,5 +43,17 @@ cd student-crowdfunding-blockchain
 cd frontend
 npm run dev
 ```
-- The project will start at http://localhost:3000
+- The project will start at http://localhost:3000/
 
+#### Issues 
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/Davda-James/Student_CrowdFunding_blockchain/issues) to discuss it .
+
+- We kindly ask that you provide as much detail as possible when submitting an issue, including steps to reproduce the problem, any error messages that you have seen, and any other relevant information. This will help us to identify and fix the issue more quickly.
+
+- Thank you for your cooperation, and we look forward to hearing from you!
+
+#### Adding New Features 
+- If you think that there might be the features that can be added in this feel free to open an issue and give a complete description about that feature I will try to integrate that if possible.
+
+## Author 
+- **Davda James** - [Davda James](https://github.com/Davda-James)
