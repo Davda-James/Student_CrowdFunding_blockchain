@@ -1,6 +1,12 @@
 # Student Crowd Funding Blockchain 
 Welcome to the **Student Crowdfunding Platform**! This project is a decentralized application (DApp) built using Solidity smart contracts for the backend and Next.js for the frontend. It allows students to create and manage fundraising campaigns, with contributions tracked and verified on blockchain .
 
+#### Tech Stacks
+![NextJs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
+![Remix IDE](https://img.shields.io/badge/Remix_IDE-363636?style=for-the-badge&logo=remix&logoColor=white)
+
+
 ![Student Crowdfunding Platform HomePage](/frontend/public/Home.png)
 ![Student Crowdfunding Platform HomePage with Vertical Navbar](/frontend/public/VerticalNav.png)
 ![Student Crowdfunding Platform Create Campaign](/frontend/public/CreateCampaign.png)
@@ -36,7 +42,7 @@ cd student-crowdfunding-blockchain
 ```
 #### 2. Setting up the folder inside /frontend/src/utils
 - Compile the smart contract and inside the utils folder create abis folder and store the EducationCrowdFunding.js
-- Inside this add DEPLOYED_CONTRACT_ADDRESS variable and contractABI and export them
+- Inside this add NEXT_PUBLIC_DEPLOYED_CONTRACT_ADDRESS variable and NEXT_PUBLIC_contractABI and export them
 
 #### 3. Setting up the frontend 
 ```bash
