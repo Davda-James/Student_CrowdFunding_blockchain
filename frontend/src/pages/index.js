@@ -3,7 +3,8 @@ import { getContract } from '../utils/web3';
 import CampaignCard from '../components/CampaignCard';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorMessage from '../components/ErrorMessage';
-
+import { Grid,Container } from '@mui/material';
+import {ethers} from "ethers";
 export default function Home() {
   const [campaigns, setCampaigns] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -20,12 +21,14 @@ export default function Home() {
                 const fundsAlreadyWithdrawn = await contract.getfundsAlreadyWithdrawn(i);
                 const completed = await contract.isCompleted(i);
                 const goal = await contract.getGoal(i);
+                // console.log(fundsAlreadyWithdrawn);
+                // console.log(goal)
                 const campaign = {
                     id: i, 
-                    fundsRaised,
-                    fundsAlreadyWithdrawn,
-                    goal,
-                    completed,
+                    fundsRaised :  ethers.formatEther(fundsRaised),
+                    fundsAlreadyWithdrawn : ethers.formatEther(fundsAlreadyWithdrawn),
+                    goal : ethers.formatEther(goal),
+                    completed : completed,
                 };
                 campaignsArray.push(campaign);
             }
@@ -45,15 +48,15 @@ export default function Home() {
   if (error) return <ErrorMessage message={error} />;
 
   return (
-    <div className="container mx-auto px-4">
+    <Container>
       <h1 className="text-4xl font-bold my-4">Student Campaigns</h1>
-      <div className="flex flex-wrap gap-4">
+      <Grid container spacing={3} justifyContent="center">
         {campaigns.map((campaign) => (
-          <div key={campaign.id} className="flex-1 min-w-[300px]">
+          <Grid item xs={12} sm={6} md={4} key={campaign.id}>
             <CampaignCard campaign={campaign} />
-          </div>
+          </Grid>
         ))}
-      </div>
-    </div>
+      </Grid>
+    </Container>
   );
 }

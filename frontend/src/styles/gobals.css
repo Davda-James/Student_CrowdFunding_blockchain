@@ -1,34 +1,42 @@
 /* styles/globals.css */
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-  }
-  
-  #__next {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  
-  .MuiDrawer-paper {
-    margin-top: 64px; /* Adjust if needed to fit below horizontal navbar */
-  }
-  /* styles/globals.css */
-  .MuiAppBar-root {
-    z-index: 1200; /* Adjust if necessary */
-  }
-  
-  .MuiDrawer-paper {
-    z-index: 1100; /* Ensure it's below the horizontal navbar */
-  }
-  
-  .centered-spinner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* Ensure body doesn’t interfere with content alignment */
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* Ensure the main content container stretches properly */
+}
+
+.MuiDrawer-paper {
+  margin-top: 64px; /* Adjust if needed to fit below horizontal navbar */
+}
+
+.MuiAppBar-root {
+  z-index: 1200; /* Adjust if necessary */
+}
+
+.MuiDrawer-paper {
+  z-index: 1100; /* Ensure it's below the horizontal navbar */
+}
+
+.centered-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Add additional styles if needed */
+.container {
+  max-width: 1200px; /* or any max width you prefer */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0 16px; /* Optional: Add some padding */
+}
